@@ -1,0 +1,20 @@
+"""
+16. A série de Fibonacci é formada pela seqüência 0,1,1,2,3,5,8,13,21,34,55,... Faça um programa que gere a série até que o valor seja maior que 500.
+"""
+
+
+fib1 = 0
+fib2 = 1
+
+print("Série de Fibonacci até passar de 500:")
+print(fib1, fib2, end=' ')
+
+while True:
+    proximo = fib1 + fib2
+    if proximo > 500:
+        break
+    print(proximo, end=' ')
+    fib1, fib2 = fib2, proximo
+
+print()
+
